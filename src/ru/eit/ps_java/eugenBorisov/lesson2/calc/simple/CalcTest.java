@@ -36,5 +36,4 @@ public class CalcTest {
         assertEquals("Error", simple.solveByWhitespaceDelimiter("6 / 0").substring(0,5));
     }
 
-
 }

@@ -11,14 +11,22 @@ public class Main {
     };
 
     public static void main(String[] args) {
+        Calc calc;
         for (String msg : greatMsg) System.out.println(msg);
-        Calc calc = new Calc(AbstractOperation.class);
         Scanner scanner = new Scanner(System.in);
         String expression = scanner.nextLine();
         while (true) {
             if (expression.isEmpty()) System.out.println(greatMsg[1]);
             else {
-                System.out.println(calc.solve(expression));
+                /*
+                *   Load operation by defined classes in defined package:
+                *       Minus.java
+                *       Plus.java
+                *       Div.java
+                *       Mult.java
+                * */
+                calc = new Calc(AbstractOperation.class);
+                System.out.println( calc.parse(expression) );
                 break;
             }
         }

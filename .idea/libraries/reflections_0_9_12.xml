@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/reflections-0.9.12.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javassist-3.27.0-GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.11.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
