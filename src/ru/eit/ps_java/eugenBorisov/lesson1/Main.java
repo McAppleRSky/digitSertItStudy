@@ -51,7 +51,7 @@ public class Main {
         else
             if (yearInt % 4 == 0)
                 if ( yearInt % 100 != 0 || yearInt % 400 == 0) days = 29;
-        if(yearInt == null) throw new NullPointerException("task4 crash");
+        if(yearInt == null) throw new NullPointerException("Task4 crash");
         return "Days count on february " + yearInput + " is: " + days;
     }
 
